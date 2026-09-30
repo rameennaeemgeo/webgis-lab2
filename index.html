@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Academic Profile Dashboard | Lab 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>WebGIS Development Course</div>
+    <div class="badge">Lab 2</div>
+  </header>
+
+  <main>
+    <!-- LEFT PANEL -->
+    <aside class="panel" aria-labelledby="connect-h">
+      <h2 id="connect-h">Quick Connect</h2>
+      <p class="sub">Select an option to view details.</p>
+
+      <button class="btn" onclick="showPopup('popup-email')">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email
+      </button>
+      <button class="btn" onclick="showPopup('popup-phone')">
+        <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+        Phone Number
+      </button>
+      <button class="btn" onclick="showPopup('popup-info')">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+        More Info
+      </button>
+
+      <div class="links">
+        <a href="https://github.com/rameennaeemgeo" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/rameen-naeem-a44b69326" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </aside>
+
+    <!-- CENTER SECTION -->
+    <section class="panel profile" aria-label="Academic profile">
+      <div class="cover"><svg viewBox="0 0 800 130" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="1.2"><ellipse cx="640" cy="70" rx="30" ry="14"/><ellipse cx="640" cy="70" rx="70" ry="30"/><ellipse cx="640" cy="70" rx="120" ry="48"/><ellipse cx="640" cy="70" rx="180" ry="66"/><ellipse cx="640" cy="70" rx="250" ry="88"/><ellipse cx="120" cy="30" rx="40" ry="16"/><ellipse cx="120" cy="30" rx="90" ry="34"/><ellipse cx="120" cy="30" rx="150" ry="56"/></g></svg></div>
+      <div class="profile-body">
+        <div class="avatar" aria-hidden="true">RN</div>
+        <h1>Rameen Naeem</h1>
+        <p class="designation">BS Geoinformatics Student</p>
+        <ul class="affil">
+          <li>PMAS-Arid Agriculture University, Rawalpindi</li>
+          <li>GIS &amp; Remote Sensing Intern, AI Geo Navigators</li>
+        </ul>
+
+        <p class="bio">
+          I am a BS Geoinformatics student at PMAS-Arid Agriculture University, Rawalpindi, specializing in GIS,
+          remote sensing and geospatial analysis. I have used Google Earth Engine, ArcMap, QGIS and Python to study
+          land surface temperature, flood susceptibility, land cover and urban climate resilience in Pakistan. My
+          Random Forest land-cover classification of District Rawalpindi, built on Sentinel-2 imagery, achieved 70%
+          overall accuracy. I completed the Future Leadership Internship Program at AI Geo Navigators, hold
+          certificates from the Asian Development Bank Institute and Integrated Aerial Precision, and am working
+          toward research in environmental and climate applications of Earth observation.
+        </p>
+
+        <div class="tags">
+          <span>Remote Sensing</span><span>GIS &amp; Cartography</span><span>Google Earth Engine</span><span>Python</span>
+        </div>
+
+        <div class="details">
+          <div>
+            <h3>Selected projects</h3>
+            <ul>
+              <li><strong>Urban Growth &amp; Climate-Resilient Planning Intelligence System, Rawalpindi.</strong> Interactive Google Earth Engine app with a vulnerability index.</li>
+              <li><strong>Land-cover classification, District Rawalpindi.</strong> Sentinel-2 and Random Forest, 70% overall accuracy.</li>
+              <li><strong>Flood susceptibility mapping, Rawalpindi.</strong> Weighted overlay in Google Earth Engine.</li>
+              <li><strong>Lahore climate dashboard.</strong> NDVI, land surface temperature and CHIRPS rainfall.</li>
+              <li><strong>Pakistan vegetation change, 2001&ndash;2024.</strong> Satellite SIF trend analysis in Python.</li>
+              <li><strong>Stock Portfolio Tracker.</strong> Python application built for the CodeAlpha internship.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Certificates &amp; programs</h3>
+            <ul>
+              <li><strong>Asian Development Bank Institute.</strong> Climate Change and Sovereign Risk, August 2026.</li>
+              <li><strong>Integrated Aerial Precision.</strong> GIS Basic Course.</li>
+              <li><strong>AI Geo Navigators.</strong> Future Leadership Internship Program 2026, completed.</li>
+              <li><strong>Auspify Technologies.</strong> Data Visualization (Microsoft Excel) Intern, 2026.</li>
+              <li><strong>AGRISAT Training Workshop on Agriculture Using Satellite Data.</strong> Participant in 2025 and organizer in 2026, Institute of Geo-Information &amp; Earth Observation, PMAS-AAUR.</li>
+              <li><strong>IMUN-2026.</strong> Delegate at the UN Framework Convention on Climate Change simulation, August 2026.</li>
+              <li><strong>Politico Vista Summer Internship Programme 2026.</strong> Personal Branding and LinkedIn Profile Optimization session.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <aside class="panel institute" aria-labelledby="inst-h">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+      </div>
+      <h2 id="inst-h">About the Institute</h2>
+      <p class="sub">Institute of Geo Information and Earth Observation</p>
+      <p>
+        The Institute of Geo Information and Earth Observation at PMAS-Arid Agriculture University, Rawalpindi, is an academic and research institution dedicated to
+        the science and application of geospatial technologies. It brings together education, research, and
+        outreach to address environmental, agricultural, and urban challenges through spatial data.
+      </p>
+      <p>
+        Its programs emphasize Geographic Information Systems, remote sensing, and Earth observation, preparing
+        students to turn satellite imagery and geospatial data into reliable, practical knowledge.
+      </p>
+      <ul>
+        <li>Geographic Information Systems</li>
+        <li>Remote sensing and image analysis</li>
+        <li>Earth observation for environmental monitoring</li>
+        <li>Web GIS and spatial data services</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>WebGIS Development Course &middot; Lab 2 &middot; Academic Profile Dashboard</footer>
+</div>
+
+<!-- MODALS -->
+<div class="overlay" id="popup-email" role="dialog" aria-modal="true" aria-labelledby="t-email" onclick="if(event.target===this)closePopup('popup-email')">
+  <div class="modal">
+    <button class="close" aria-label="Close" onclick="closePopup('popup-email')">&times;</button>
+    <h3 id="t-email">Email address</h3>
+    <p class="value"><a href="mailto:nrameen99@gmail.com" style="color:var(--blue-deep)">nrameen99@gmail.com</a></p>
+    <button class="ok" onclick="closePopup('popup-email')">Close</button>
+  </div>
+</div>
+
+<div class="overlay" id="popup-phone" role="dialog" aria-modal="true" aria-labelledby="t-phone" onclick="if(event.target===this)closePopup('popup-phone')">
+  <div class="modal">
+    <button class="close" aria-label="Close" onclick="closePopup('popup-phone')">&times;</button>
+    <h3 id="t-phone">Phone number</h3>
+    <p class="value">Nil</p>
+    <button class="ok" onclick="closePopup('popup-phone')">Close</button>
+  </div>
+</div>
+
+<div class="overlay" id="popup-info" role="dialog" aria-modal="true" aria-labelledby="t-info" onclick="if(event.target===this)closePopup('popup-info')">
+  <div class="modal">
+    <button class="close" aria-label="Close" onclick="closePopup('popup-info')">&times;</button>
+    <h3 id="t-info">More information</h3>
+    <p class="value">Nil</p>
+    <button class="ok" onclick="closePopup('popup-info')">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

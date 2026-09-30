@@ -124,3 +124,5 @@ header{background:rgba(255,255,255,.75);backdrop-filter:blur(6px);border:1px sol
 .details li{margin-bottom:9px}
 .details strong{font-weight:600}
 @media (max-width:760px){.details{grid-template-columns:1fr}}
+
+.avatar{position:relative;z-index:1}
